@@ -1,14 +1,15 @@
 var express = require('express');
 var app = express();
 var path = require('path')
-var POEMS_DATA = path.join(__dirname + '/data/poems.json');
+var fs = require('fs')
+var HAIKUS_DATA = path.join(__dirname + '/data/haikus.json');
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname + '/client/build/index.html'));
 });
 
-app.get('/poems', function (req, res) {
-  fs.readFile(POEMS_DATA, function(err, data){
+app.get('/haikus', function (req, res) {
+  fs.readFile(HAIKUS_DATA, function(err, data){
     if(err){
       console.error(err)
       return

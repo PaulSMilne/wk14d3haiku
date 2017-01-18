@@ -1,23 +1,22 @@
 import React from 'react'
 import About from './About.jsx'
-import Haiku from './Haiku.jsx'
+import Haikus from './Haikus.jsx'
 import {Link} from 'react-router'
 
-class Main extends React.Component{
+const Main = (props) => {
 
-     render(){
-          return (
-               <section>
+      return (
+               <section className="navbar">
                     <h1>My Haikus</h1>
                     <ul>
-                         <li><Link to='/home'>Home</Link></li>
-                         <li><Link to='/haiku'>Haiku</Link></li>
+                         <li><Link to='/home'>Home</Link>&nbsp;&nbsp;</li>
+                         <li><Link to='/haikus'>Haikus</Link>&nbsp;&nbsp;</li>
                          <li><Link to='/about'>About</Link></li>
                     </ul>
-                    {this.props.children}
+                    {props.children}
                </section>
           )
-     }
+     
 }
 
 export default Main

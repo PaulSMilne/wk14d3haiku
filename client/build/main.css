@@ -1,0 +1,26 @@
+body {text-align:center;
+     font-family: Helvetica;
+     background: url('/images/fine_art_paper.jpg') repeat-y;}
+
+h1 {margin-top:2em;
+font-size:3em;}
+
+.navbar ul li {
+     list-style-type: none;
+     margin-left:0;
+     padding-left:0;
+     display:inline;
+     font-weight: bold;
+}
+
+.navbar ul{
+     margin-left:0;
+     padding-left:0;
+     margin-bottom:3em;
+}
+
+.singlepoem {
+     margin-bottom:3em;
+     font-size:1.2em;
+     line-height: 2em;
+}
